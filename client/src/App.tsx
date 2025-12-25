@@ -24,13 +24,15 @@ function App() {
   if (loading) return <div>Loading...</div>;
 
   return (
-    <div>
-      <h1>Users</h1>
+    <div className="flex justify-center items-center h-dvh">
+      <div>
+      <h1 className="text-2xl font-bold text-red-500">Users</h1>
       <ul>
         {users.map((u) => (
           <li key={u.id}>{u.name}</li>
         ))}
       </ul>
+      </div>
     </div>
   );
 }
